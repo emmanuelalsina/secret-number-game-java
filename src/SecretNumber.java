@@ -33,7 +33,10 @@ public class SecretNumber {
         // flag que actua como interruptor , cambia a true cuando ocurre algo específico
         boolean encontrado = false;
         //Se declara afuera y se usa adentro.
+        //no necesitas crear un nuevo objeto Scanner en cada vuelta, con uno solo es suficiente para toda la ejecución del programa.
         int number ; //lo hago asi porque de otra forma con el scanner.nextInt() el programa leeria antes de siquiera recibir algo
+        
+        
         int secretNumber = random.nextInt(101);
 
 
